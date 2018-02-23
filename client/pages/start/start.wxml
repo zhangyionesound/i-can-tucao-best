@@ -1,0 +1,62 @@
+<!--pages/start/start.wxml-->
+
+<!-- 新用户看到自己吐槽过的公司的吐槽 或者 自己选择要关注那些公司的吐槽-->
+<view class="container">
+  <view wx:if="{{newUser}}">
+    <view class="title">欢迎来到我最会吐槽</view>
+    <view class="title">在这里，你可以看到大家对于某些公司的吐槽，快来加入吧</view>
+    <!-- <view class="title">吐槽&围观吐槽</view> -->
+    <!-- 如果是新用户的话 -->
+    <view class="tocaoButton" bindtap="gotoTuCao">
+      吐槽
+    </view>
+    <view class="careButton" bindtap="gotoCare">
+      围观
+    </view>
+  </view>
+  <view wx:else>
+    <!-- 如果是老用户，选择公司栏 -->
+    <view class="type-container">
+      <scroll-view class="type-navbar" scroll-x="true">
+        <view class="type-box" wx:for-items="{{categories}}" wx:key="id">
+          <view id="{{item.f_id}}" class="type-navbar-item {{activeCategoryId == item.f_id ? 'type-item-on' : ''}}" bindtap="tabClick">
+            {{item.f_name}}
+          </view>
+        </view>
+        <view class="type-box">
+          <view class="type-navbar-item" bindtap="gotoCare">
+            +
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+    <!-- 循环显示吐槽数据 -->
+    <view class="tucao-container">
+      <view class="tucao-box" wx:for-items="{{tucaoData}}" wx:key="{{index}}" data-id="{{item.f_id}}">
+        <view class="desc">{{item.f_desc}}</view>
+        <view class="zan-label">
+          <view wx:for="{{categories}}" wx:for-index="idx" wx:for-item="itemName" wx:key="id">
+            <view wx:if="{{item.f_company_id == itemName.f_id}}" class="company">{{itemName.f_name}}</view>
+          </view>
+          <view class="zan" bindtap="zanClick" data-id="{{item.f_id}}">
+            <image class="img" src="/images/emoji-21.png"></image>{{item.f_zan}}</view>
+          <view class="cai" bindtap="caiClick" data-id="{{item.f_id}}">
+            <image class="img" src="/images/emoji-20.png"></image>{{item.f_cai}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view wx:if="{{nodata && !newUser}}">
+  <view class="title">这里还没有人吐槽过</view>
+  <view class="tocaoButton" bindtap="gotoTuCaoCompany" data-id='{{activeCategoryId}}'>
+    让我来吐槽
+  </view>
+</view>
+
+<view wx:if="{{shuaXinFlag && !newUser}}">
+  <view class="tocaoButton" bindtap="shuaxin">
+    刷新一下
+  </view>
+</view>

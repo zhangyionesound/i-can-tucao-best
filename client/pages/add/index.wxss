@@ -1,0 +1,37 @@
+/* pages/add/index.wxss */
+.textarea{
+  padding: 15rpx 40rpx 15rpx 40rpx;
+}
+.notice{
+  display: flex;
+  justify-content: space-between;  
+  flex-wrap:wrap;
+  height: 80rpx;
+  line-height: 80rpx;
+  margin-top: 10rpx;
+  background-color: #fff;
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 15rpx 40rpx;
+  margin-bottom:10rpx;
+}
+.picker{
+  width: 100%
+}
+.company{
+  color: grey;
+  text-align: center;
+  display: flex;
+}
+.companyName{
+  color: black;
+  text-align: center;
+  /* display: flex; */
+  width: 165px;
+}
+.button{
+  margin-top:10px;
+  margin:20px;
+}
+

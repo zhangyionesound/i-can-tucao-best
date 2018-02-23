@@ -1,0 +1,14 @@
+<!--pages/care/index.wxml-->
+
+<!-- 选择你要关注的公司 -->
+<!-- 如果已经关注了，就打上勾 -->
+<!-- 如果没有关注过，就没有勾 -->
+<view>
+<view class="title">点击选择你要关注的公司</view>
+<view class="box">
+  <view class="name {{1 == item.f_care_flag ? 'name-on' : 'name-off'}}" wx:for-items="{{companyArray}}" wx:key="{{index}}" bindtap="toCarethis" data-id="{{item.f_id}}">
+    {{item.f_name}}
+  </view>
+</view>
+</view>
+<button class='square' bindtap="gotoSquare">好了，去广场</button>

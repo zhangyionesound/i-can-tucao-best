@@ -1,0 +1,51 @@
+/* pages/my/index.wxss */
+
+.container {
+  min-height: 100%;
+  overflow: hidden;
+  overflow-y: hidden;
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  padding: 50rpx 0;
+  align-items: center;
+  background: #cce8cc;
+  width: 750rpx;
+}
+
+.userinfo-avatar {
+  width: 160rpx;
+  height: 160rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  margin-top: 20rpx;
+  color: #fff;
+}
+
+.about {
+  width: 100%;
+  background-size: 16rpx auto, 750rpx auto;
+  margin: 40rpx 0;
+  height: 35rpx;
+  line-height: 35rpx;
+  padding-left: 70rpx;
+  display: flex;
+  flex-wrap: nowrap;
+  position: relative;
+}
+
+.img {
+  float: left;
+  right: 50px;
+  width: 20rpx;
+  height: 35rpx;
+  line-height: 35rpx;
+  margin-right: 3px;
+  vertical-align: middle;
+  position: absolute;
+}

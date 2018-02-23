@@ -1,0 +1,129 @@
+/* pages/start/start.wxss */
+
+.type-container {
+  width: 100%;
+  height: 88rpx;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.type-navbar {
+  white-space: nowrap;
+  height: 88rpx;
+  width: 100%;
+  background-color: #fff;
+}
+
+.type-box {
+  width: 160rpx;
+  box-sizing: content-box;
+  font-size: 26rpx;
+  line-height: 84rpx;
+  text-align: center;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.type-navbar-item {
+  border-bottom: 4rpx solid #fff;
+}
+
+.type-item-on {
+  border-bottom: 4rpx solid #e64340;
+}
+
+.tucao-box {
+  width: 100%;
+  height: 100%;
+  margin-bottom:20px;
+}
+
+.desc {
+  font-size: 18px;
+  margin-top:30px;
+  margin-bottom:30px;
+  margin-left:50px;
+  margin-right:50px;
+}
+
+.zan {
+  font-size: 12px;
+}
+
+.cai {
+  font-size: 12px;
+}
+
+.tocaoButton {
+  /* padding-top: 330rpx; */
+  color: #fff;
+  background: #1aad19;
+  border-radius: 5px;
+  /* width: 500rpx; */
+  height: 90rpx;
+  line-height: 90rpx;
+  text-align: center;
+  font-size: 18px;
+  margin: 10rpx;
+  margin-top:50px;
+}
+
+.careButton {
+  color: #fff;
+  background: grey;
+  border-radius: 5px;
+  /* width: 500rpx; */
+  height: 90rpx;
+  line-height: 90rpx;
+  text-align: center;
+  font-size: 18px;
+  margin: 10rpx;
+  margin-top:10px;
+}
+
+.title {
+  text-align: center;
+  margin-top:50px;
+}
+
+.desc {
+  font-size: 20px;
+  text-align: center;
+}
+.zan-label{
+  display: flex;
+  flex-wrap: nowrap;
+  position:relative;
+}
+.company {
+  width: 100px;
+  float: left;
+  text-align: center;
+  font-size: 14px;
+  color: grey;
+}
+.zan{
+  float: left;
+  right: 50px;
+  width: 35px;
+  height: 22px;
+  font-size: 14px;
+  color: grey;
+  position:absolute;
+}
+.cai{
+  float: left;
+  right: 5px;
+  width: 35px;
+  height: 22px;
+  font-size: 14px;
+  color: grey;
+  position:absolute;
+
+}
+.img {
+  width: 16px;
+  height: 16px;
+  margin-right: 3px;
+  vertical-align: middle;
+}

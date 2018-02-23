@@ -1,0 +1,14 @@
+<!--pages/add/index.wxml-->
+<view class='container'>
+  <form bindsubmit='bindFormSubmit'>
+    <textarea placeholder='快来吐槽一下，让大家开心开心' name="textarea" maxlength="750" value="{{tucao}}" class="textarea">
+    </textarea>
+     <!-- <view style="height:20rpx;background: #eee;width:100%;"></view> -->
+    <view class="notice">
+      <picker name="selector" class="picker" bindchange="bindPickerChange" value="{{index}}" range="{{company}}" range-key="{{'f_name'}}" value='{{companyId}}'>
+       <view class="company">选择公司:<view class="companyName">{{companyId?company[companyId].f_name:company[index].f_name}}</view></view> 
+      </picker>
+    </view>
+    <button class="button" form-type='submit'>写好了，发出去</button>
+  </form>
+</view>

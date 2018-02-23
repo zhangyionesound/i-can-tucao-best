@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/start/start",
+    "pages/index/index",
+    "pages/addCgi/addCgi",
+    "pages/my/index",
+    "pages/add/index",
+    "pages/care/index"
+  ],
+  "window": {
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle": "dark",
+    "backgroundColor": "#F6F6F6",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "我最会吐槽",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/start/start",
+        "text": "广场",
+        "iconPath": "images/nav/smile-off.png",
+        "selectedIconPath": "images/nav/smile-on.png"
+      },
+      {
+        "pagePath": "pages/add/index",
+        "text": "吐槽",
+        "iconPath": "images/nav/add-off.png",
+        "selectedIconPath": "images/nav/add-on.png"
+      },
+      {
+        "pagePath": "pages/my/index",
+        "text": "我的",
+        "iconPath": "images/nav/mine-off.png",
+        "selectedIconPath": "images/nav/mine-on.png"
+      }
+    ]
+  }
+}

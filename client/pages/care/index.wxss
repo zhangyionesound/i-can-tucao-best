@@ -1,0 +1,33 @@
+/* pages/care/index.wxss */
+.box{
+  font-size: 14px;
+  text-align: center;
+  height: 100%;
+  line-height:30px;   
+  /* width: 100%; */
+  display: flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+  padding: 0px 20px 20px 20px
+}
+.name{
+  width: 65px;
+  height: 30px;
+  border-radius:5%;
+  margin: 5rpx;
+  color:#fff;
+}
+.name.name-on{
+  background-color: #6aa84f; 
+}
+.name.name-off{
+  background-color: grey;
+}
+.title{
+  text-align: center;
+  margin-bottom: 20px;
+}
+.square{
+  margin-top:40px;
+  margin:20px;
+}
