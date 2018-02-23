@@ -3,7 +3,7 @@
  */
 
 // 此处主机域名修改成腾讯云解决方案分配的域名
-var host = 'https://565209316.bestshow.club';
+var host = '你自己的域名地址';
 
 var config = {
 

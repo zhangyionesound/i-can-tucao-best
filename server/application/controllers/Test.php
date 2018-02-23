@@ -16,7 +16,7 @@ class Test extends CI_Controller {
         $result = DB::select('t_word', ['f_id,f_company_id,f_desc,f_zan,f_cai,f_timestamp'], $conditions);
         var_dump($result);
         die();
-        $skey = '77a0c048048eb59a03801f4ca2c16fe4c76f7aea';
+        $skey = '';
         if (!empty($_GET['skey'])) {
             $skey = $_GET['skey'];
         }
