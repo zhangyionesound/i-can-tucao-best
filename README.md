@@ -8,7 +8,7 @@
 1、server里面的config.php 里面的 appId为自己的 appId；mysql的密码为 腾讯云给你的密码；
 2、client 里面的config.js 的 host 改为自己的域名
 
-界面演示：
+
 ![Image text](https://github.com/zhangyionesound/i-can-tucao-best/blob/master/WechatIMG21377.jpeg)
 ![Image text](https://github.com/zhangyionesound/i-can-tucao-best/blob/master/WechatIMG21378.jpeg)
 ![Image text](https://github.com/zhangyionesound/i-can-tucao-best/blob/master/WechatIMG21376.jpeg)
